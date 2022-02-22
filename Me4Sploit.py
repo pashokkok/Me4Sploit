@@ -46,15 +46,18 @@ if key == "2jsjejHEkdjutt54lkvxa83etrbKB4hUeJLiwlfu56rhcksnrix":
 	print( Fore.YELLOW )
 	print('Active')
 	time.sleep(2)
-	lists = input ('[1] Gemail-hack \n[2] B0mb3r \n[3] Mail-Spammer \nMe4Sploit ==>  ')
+	lists = input ('[1] Gemail-hack \n[2] B0mb3r \n[3] Mail-Spammer \n[4] Brute_Force \nMe4Sploit ==>  ')
 	if lists == "1":
 		os.system('git clone https://github.com/Ha3MrX/Gemail-Hack')
 		
 	if lists == "2":
-		os.system('bash install_B0mb3r.sh')
+		os.system('git clone https://github.com/Denishnc/b0mb3r')
 		
 	if lists == "3":
-		os.system('bash install_Mail_Spammer')
+		os.system('git clone https://github.com/pashokkok/Mail_Smmp')
+	
+	if lists == "4":
+		os.system('git clone https://github.com/Tim55667757/pwd_brut')
 		
 	else:
 		print('ERROR: 102' + Fore.YELLOW + '$' + Fore.RED + 'Invalid Tool')
