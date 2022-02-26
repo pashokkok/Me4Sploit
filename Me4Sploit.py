@@ -20,7 +20,7 @@ import smtplib
 import multiprocessing
 from os import system
 import re
-version = '1.3'
+version = '1.4'
 #design me4
 
 def banner():
@@ -31,7 +31,7 @@ def banner():
 	print('▒█▀▄▀█ █▀▀ ░█▀█░ ▒█▀▀▀█ █▀▀█ █░░ █▀▀█ ░▀░ ▀▀█▀▀ ')
 	print('▒█▒█▒█ █▀▀ █▄▄█▄ ░▀▀▀▄▄ █░░█ █░░ █░░█ ▀█▀ ░░█░░ ')
 	print('▒█░░▒█ ▀▀▀ ░░░█░ ▒█▄▄▄█ █▀▀▀ ▀▀▀ ▀▀▀▀ ▀▀▀ ░░▀░░')
-	print('                                          DarkSoftware                              \       1.3      /')
+	print('                                          DarkSoftware                              \       1.4      /')
 	print('                               https://t.me/DarkSoftvare                      \________/')
 def ver_check():
 	time.sleep(3)
@@ -48,9 +48,8 @@ def ver_check():
 				print(C + '[' + G + ' Актуально ' + C +']' + '\n')
 			else:
 				print(C + '[' + G + ' Доступно : {} '.format(github_ver) + C + ']' + '\n')
-				print(R + 'Пожалуйста, обновите Me4Sploit до актуальной версии')
-				print(Fore.MAGENTA)
-				newver = input('[1] Как мне обновить Me4Sploit до новой версии? \n[2] Выйти' + G + '\nMe4Sploit ==> ')
+				print(R + '[-] Пожалуйста, обновите Me4Sploit до актуальной версии \n')
+				newver = input(G + '[1]' + C + 'Как мне обновить Me4Sploit до новой версии? \n' + G + '[2]' + C + 'Выйти' + G + '\nMe4Sploit ==> ')
 				if newver == "1" :
 					print(Fore.MAGENTA)
 					os.system('clear')
@@ -76,22 +75,29 @@ def ver_check():
 		print('\n' + R + '[-]' + C + ' Исключение : ' + W + str(e))
 
 def choice():
-	print('[1] ActiveKey')
-	print('[2] Cracker')
-	print('[3] Exit')
+	print(G + '[1]' + C + ' ActiveKey')
+	print(G + '[2]' + C + ' Cracker')
+	print(G + '[3]' + C + ' Exit')
 	print('\n')
 def code():
 	print(Fore.GREEN)
 	option = input('Me4Sploit ==>  ')
 	if option == "1":
-		print('                                 \n \n            Copy and Past \n \n' + Fore.YELLOW + '2jsjejHEkdjutt54lkvxa83etrbKB4hUeJLiwlfu56rhcksnrix')
+		print('                                 \n \n            Copy and Past \n \n' + Fore.YELLOW + '     2jsjejHEkdjutt54lkvxa83etrbKB4hUeJLiwlfu56rhcksnrix')
 		key = input ("Syst-Key: ")
 		
 		if key == "2jsjejHEkdjutt54lkvxa83etrbKB4hUeJLiwlfu56rhcksnrix":
 			print( Fore.YELLOW )
 			print('Active')
 			time.sleep(2)
-			lists = input ('[Exit][1] Gemail-hack \n[2] B0mb3r \n[3] Mail-Spammer \n[4] Brute_Force \n[5] Grab-Cam \n[6] Shark \n[7] CrossFire Ddos \nMe4Sploit ==>  ')
+			lists = input ('[Exit] Exit \n[1] Gemail-hack \n[2] B0mb3r \n[3] Mail-Spammer \n[4] Brute_Force \n[5] Grab-Cam \n[6] Shark \n[7] CrossFire Ddos \n[8] FaceBook_Brute \n[9] AresBomb \n[10] Track-Em \n[11] Cardesc \n[12] Insanity-Framework \n[13] Entropy Toolkit \n[14] Airgeddon \n[15] ISniff-GPS \n[16] Trape \n[17] Kali Nethunter \n[18] XAttacker \n[19] WordSteal \n[20] SpiderFoot \nMe4Sploit ==>  ')
+			
+			if lists == "Exit":
+				exit()
+				
+			if lists == "exit":
+				exit()
+				
 			if lists == "1":
 				os.system('git clone https://github.com/Ha3MrX/Gemail-Hack')
 				
@@ -118,6 +124,50 @@ def code():
 				
 			if lists == "8":
 				os.system('git clone https://github.com/pashokkok/FB')
+				
+			if lists == "9":
+				os.system("pkg install git")
+				os.system("pkg install python")
+				os.system("pip install requests")
+				os.system("git clone https://github.com/MaksPV/AresBomb")
+				
+			if lists == "10":
+				os.system("git clone https://github.com/LiNuX-Mallu/Track-Em.git")
+				
+			if lists == "11":
+				os.system("git clone https://github.com/escdroid/cardesc.git")
+				
+			if lists == "12":
+				os.system("git clone https://github.com/4w4k3/Insanity-Framework")
+			
+			if lists == "13":
+				os.system("pip install tailer")
+				os.system("git clone https://github.com/evildevill/entropy")
+				
+			if lists == "14":
+				os.system("git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git")
+				
+			if lists == "15":
+				os.system("git clone https://github.com/hubert3/iSniff-GPS.git")
+			
+			if lists == "16":
+				os.system("git clone https://github.com/jofpin/trape.git")
+				
+			if lists == "17":
+				os.system("pkg install wget")
+				os.system("termux-setup-storage")
+				os.system("wget -O install-nethunter-termux https://offs.ec/2MceZWr")
+				os.system("chmod 777 install-nethunter-termux")
+				os.system("./install-nethunter-termux")
+				
+			if lists == "18":
+				os.system("git clone https://github.com/Moham3dRiahi/XAttacker.git")
+				
+			if lists == "19":
+				os.system("git clone https://github.com/0x09AL/WordSteal.git")
+				
+			if lists == "20":
+				os.system("git clone https://github.com/smicallef/spiderfoot")
 				
 			else:
 				print('ERROR: 102' + Fore.YELLOW + '$' + Fore.RED + 'Invalid Tool')
